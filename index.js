@@ -10,10 +10,6 @@ function(Godot) {
 
 // Support for growable heap + pthreads, where the buffer may change, so JS views
 // must be updated.
-cors: {
-	origin: [‘https://alexcolbaster.github.io’],
-	methods: ‘GET,HEAD,PUT,PATCH,DELETE’,
-}
 function GROWABLE_HEAP_I8() {
   if (wasmMemory.buffer != buffer) {
     updateGlobalBufferAndViews(wasmMemory.buffer);
