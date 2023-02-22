@@ -11,7 +11,7 @@ function(Godot) {
 // Support for growable heap + pthreads, where the buffer may change, so JS views
 // must be updated.
 cors: {
-	origin: [‘https://JAM-VK.github.io’],
+	origin: [‘https://alexcolbaster.github.io’],
 	methods: ‘GET,HEAD,PUT,PATCH,DELETE’,
 }
 function GROWABLE_HEAP_I8() {
